@@ -1,0 +1,42 @@
+.nav-top{
+    background: rgb(13 110 253);
+    padding: 20px 0;
+    /* line-height: 90px; */
+}
+
+.nav-top span{
+    background: rgb(250, 111, 86);
+    border-radius: 50%;
+    padding: 5px;
+    color: rgb(241, 241, 77);
+}
+
+.nav-top p {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.navigation h1 {
+    font-size: 33px;
+    font-weight: 700;
+    color: rgb(250, 111, 86);
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.navigation .logOutBtn {
+    padding: 5px 10px;
+    background-color: rgb(233, 125, 106);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 20px;
+}
