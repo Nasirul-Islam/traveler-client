@@ -7,6 +7,10 @@ import {
 import './App.css';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
+import NotFound from "./Pages/NotFound/NotFound";
+import AddOrder from "./Pages/Orders/AddOrder/AddOrder";
+import ManageOrder from "./Pages/Orders/ManageOrder/ManageOrder";
+import MyOrder from "./Pages/Orders/MyOrder/MyOrder";
 import Purchase from './Pages/Purchase/Purchase';
 import Footer from './Pages/Shared/Footer/Footer';
 import Navigation from './Pages/Shared/Navigation/Navigation';
@@ -28,6 +32,18 @@ function App() {
           </Route>
           <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path="/myOrder">
+            <MyOrder></MyOrder>
+          </Route>
+          <Route path="/manageOrder">
+            <ManageOrder></ManageOrder>
+          </Route>
+          <Route path="/addOrder">
+            <AddOrder></AddOrder>
+          </Route>
+          <Route exact path="*">
+            <NotFound></NotFound>
           </Route>
         </Switch>
         <Footer></Footer>
