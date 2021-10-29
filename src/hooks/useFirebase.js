@@ -23,13 +23,10 @@ const useFirebase = () => {
     }, [])
 
     const handlegooglelogin = () => {
-        signInWithPopup(auth, googleprovider)
-            .then(result => {
-                setUser(result.user);
-            })
-            .catch(error => {
-                seterrorMessage(error.message);
-            })
+        return signInWithPopup(auth, googleprovider)
+        // .catch(error => {
+        //     seterrorMessage(error.message);
+        // })
     }
 
     const handlelogOut = () => {

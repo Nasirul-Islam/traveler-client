@@ -20,7 +20,6 @@ const SIngleService = ({ data }) => {
                     <Button variant="info" className="PurchaseBtn">
                         <Link to="/purchase">Purchase Now</Link>
                     </Button>
-                    {/*  onClick={handlePurchaseBtn} */}
                 </Card>
             </Col>
         </>
