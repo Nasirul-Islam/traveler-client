@@ -16,16 +16,16 @@ const Navigation = () => {
                                 <Link to="/home">Home</Link>
                             </Nav>
                             <Nav>
-                                <Link to="/home">Login</Link>
+                                <Link to="/login">Login</Link>
                             </Nav>
                             <Nav>
-                                <Link to="/home">My Order</Link>
+                                <Link to="/MyOrder">My Order</Link>
                             </Nav>
                             <Nav>
-                                <Link to="/home">Manage Order</Link>
+                                <Link to="/ManageOrder">Manage Order</Link>
                             </Nav>
                             <Nav>
-                                <Link to="/home">Add Order</Link>
+                                <Link to="/AddOrder">Add Order</Link>
                             </Nav>
                             <Button
                                 // onClick={handlelogOut} 

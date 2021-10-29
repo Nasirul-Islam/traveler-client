@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const SIngleService = ({ data }) => {
+const SingleOffer = ({ data }) => {
     const { name, email, website, phone } = data;
     return (
         <>
@@ -20,11 +20,10 @@ const SIngleService = ({ data }) => {
                     <Button variant="info" className="PurchaseBtn">
                         <Link to="/purchase">Purchase Now</Link>
                     </Button>
-                    {/*  onClick={handlePurchaseBtn} */}
                 </Card>
             </Col>
         </>
     );
 };
 
-export default SIngleService;
+export default SingleOffer;
