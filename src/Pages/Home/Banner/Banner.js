@@ -7,11 +7,13 @@ const Banner = () => {
         <div className="banner">
             <Container>
                 <Row>
-                    <Col md={6} className="">
+                    <Col md={3} className="">
                     </Col>
                     <Col md={6} className="banner-text">
                         <h1>Your Journey Begins</h1>
                         <h3>A journey of a thousand miles starts with a single step, start your journey with "Traveler" agency</h3>
+                    </Col>
+                    <Col md={3} className="banner-text">
                     </Col>
                 </Row>
             </Container>

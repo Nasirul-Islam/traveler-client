@@ -5,10 +5,10 @@ import SingleOrder from '../SingleOrder/SingleOrder';
 
 const MyOrder = () => {
     const { myorders } = useOrder();
-    console.log(myorders);
+    // console.log(myorders);
     return (
-        <Container>
-            <h2>Here is MyOrder {myorders.length}</h2>
+        <Container className="py-4">
+            <h2>Total Purchase : {myorders.length}</h2>
             <Row xs={1} md={3} className="g-4 py-3">
                 {
                     myorders?.map(data => <SingleOrder

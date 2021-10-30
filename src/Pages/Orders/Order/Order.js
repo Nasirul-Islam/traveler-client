@@ -2,7 +2,20 @@ import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 
 const Order = ({ data }) => {
-    const { img, title } = data;
+    const { img, title, id } = data;
+    // console.log(data);
+    const handleCancel = (id) => {
+        fetch(`http://localhost:5000/cancelorder/${id}`, {
+            method: "delete",
+            headers: { "content-type": "application/json" },
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.deletedCount) {
+                    alert('deleted')
+                }
+            })
+    }
     return (
         <div>
             <Col>
@@ -14,7 +27,9 @@ const Order = ({ data }) => {
                             {/* {description.slice(0, 180)} */}
                         </Card.Text>
                     </Card.Body>
-                    <Button variant="info" className="PurchaseBtn">Cancel</Button>
+                    <Button variant="info"
+                        onClick={() => handleCancel(id)}
+                        className="PurchaseBtn">Cancel</Button>
                 </Card>
             </Col>
         </div>
