@@ -4,7 +4,7 @@ import { useEffect } from "react";
 const useData = () => {
     const [datas, setDatas] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/serveces')
+        fetch('https://serene-stream-43167.herokuapp.com/serveces')
             .then(res => res.json())
             .then(data => {
                 data?.map(alldata => setDatas(alldata))

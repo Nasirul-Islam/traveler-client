@@ -6,7 +6,6 @@ import useFirebase from '../../../hooks/useFirebase';
 
 const Navigation = () => {
     const { user, handlelogOut } = useFirebase();
-    // console.log(user?.email);
     return (
         <div className="nav-top">
             <Navbar collapseOnSelect expand="md" bg="primary" variant="dark">
@@ -31,7 +30,7 @@ const Navigation = () => {
                                         <Link to="/manageOrder">Manage Order</Link>
                                     </Nav>
                                     <Nav>
-                                        <Link to="/addOrder">Add Order</Link>
+                                        <Link to="/addServices">Add Services</Link>
                                     </Nav>
                                     <Button
                                         onClick={handlelogOut}

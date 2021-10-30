@@ -5,8 +5,6 @@ import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
     const { user, handlegooglelogin, setIsloding } = useAuth();
-    console.log(user);
-    // console.log(errorMessage);
 
     const history = useHistory();
     const location = useLocation();

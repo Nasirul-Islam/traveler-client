@@ -5,16 +5,22 @@ const Order = ({ data }) => {
     const { img, title, id } = data;
     // console.log(data);
     const handleCancel = (id) => {
-        fetch(`http://localhost:5000/cancelorder/${id}`, {
-            method: "delete",
-            headers: { "content-type": "application/json" },
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.deletedCount) {
-                    alert('deleted')
-                }
+        if (window.confirm("Are you sure?")) {
+            fetch(`https://serene-stream-43167.herokuapp.com/cancelorder/${id}`, {
+                method: "delete",
+                headers: { "content-type": "application/json" },
             })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount) {
+                        alert("Successfull Canceled");
+                        window.location.reload();
+                    }
+                })
+        }
+        else {
+            alert("Have a nice trip.");
+        }
     }
     return (
         <div>

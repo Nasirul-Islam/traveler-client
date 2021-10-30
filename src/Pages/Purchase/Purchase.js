@@ -21,7 +21,7 @@ const Purchase = () => {
         data.email = user.email
         data.purchaseId = purchaseid
         console.log(data)
-        axios.post('http://localhost:5000/addorder', data)
+        axios.post('https://serene-stream-43167.herokuapp.com/addorder', data)
             .then(res => {
                 console.log(res);
                 if (res.data.insertedId) {

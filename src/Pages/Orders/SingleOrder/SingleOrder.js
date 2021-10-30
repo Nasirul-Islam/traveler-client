@@ -6,9 +6,6 @@ const SingleOrder = ({ Id }) => {
     const { datas } = useData();
     const servicesresult = datas?.services?.filter(data => data.id == Id);
     const offersresult = datas?.offers?.filter(data => data.id == Id);
-    // console.log(servicesresult);
-    // console.log(offersresult);
-    // console.log(Id);
     return (
         <div>
             <div>
