@@ -5,15 +5,31 @@ import { useForm } from 'react-hook-form';
 import useData from '../../hooks/useData';
 import { useParams } from 'react-router';
 import Details from '../Details/Details';
+import useAuth from '../../hooks/useAuth';
+import axios from 'axios';
 
 const Purchase = () => {
+    const { user } = useAuth();
     const { datas } = useData();
     const { purchaseid } = useParams();
     const servicesresult = datas?.services?.filter(data => data.id == purchaseid);
     const offersresult = datas?.offers?.filter(data => data.id == purchaseid);
-
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    console.log(user?.email);
+    // Form --------
+    const { register, reset, handleSubmit, formState: { errors } } = useForm();
+    const onSubmit = data => {
+        data.email = user.email
+        data.purchaseId = purchaseid
+        console.log(data)
+        axios.post('http://localhost:5000/addorder', data)
+            .then(res => {
+                console.log(res);
+                if (res.data.insertedId) {
+                    alert("Purchase Successfully")
+                    reset();
+                }
+            })
+    };
     return (
         <Container className="py-5">
             <Row>
@@ -36,6 +52,7 @@ const Purchase = () => {
                         </div>
                     </div>
                 </Col>
+                {/* --------- Form ---------- */}
                 <Col md={6} className="info">
                     <div className="py-3">
                         <h2>Give Your Information</h2>

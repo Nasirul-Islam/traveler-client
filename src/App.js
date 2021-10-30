@@ -8,7 +8,6 @@ import AuthProvider from "./context/AuthProvider";
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
 import NotFound from "./Pages/NotFound/NotFound";
-import AddOrder from "./Pages/Orders/AddOrder/AddOrder";
 import ManageOrder from "./Pages/Orders/ManageOrder/ManageOrder";
 import MyOrder from "./Pages/Orders/MyOrder/MyOrder";
 import PrivetRoute from "./Pages/PrivetRoute/PrivetRoute";

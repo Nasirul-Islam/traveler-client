@@ -4,9 +4,11 @@ import { useEffect } from "react";
 const useData = () => {
     const [datas, setDatas] = useState([]);
     useEffect(() => {
-        fetch('/fackdata.json')
+        fetch('http://localhost:5000/serveces')
             .then(res => res.json())
-            .then(data => setDatas(data))
+            .then(data => {
+                data?.map(alldata => setDatas(alldata))
+            })
     }, [])
     return {
         datas
