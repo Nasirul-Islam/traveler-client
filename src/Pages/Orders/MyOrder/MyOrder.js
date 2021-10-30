@@ -1,17 +1,23 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { Container, Row } from 'react-bootstrap';
+import useOrder from '../../../hooks/useOrder';
+import SingleOrder from '../SingleOrder/SingleOrder';
 
 const MyOrder = () => {
-    const [myorders, setMyorders] = useState([]);
-    useEffect(() => {
-        fetch('http://localhost:5000/myorder')
-            .then(res => res.json())
-            .then(data => setMyorders(data))
-    }, []);
+    const { myorders } = useOrder();
     console.log(myorders);
     return (
-        <div>
+        <Container>
             <h2>Here is MyOrder {myorders.length}</h2>
-        </div>
+            <Row xs={1} md={3} className="g-4 py-3">
+                {
+                    myorders?.map(data => <SingleOrder
+                        key={data._id}
+                        Id={data.purchaseId}
+                    ></SingleOrder>)
+                }
+            </Row>
+        </Container>
     );
 };
 
