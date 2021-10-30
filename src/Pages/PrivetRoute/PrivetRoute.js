@@ -1,11 +1,14 @@
 import React from 'react';
+import { Spinner } from 'react-bootstrap';
 import { Redirect, Route } from 'react-router';
 import useAuth from '../../hooks/useAuth';
-// import useFirebase from '../../hooks/useFirebase';
 
 const PrivetRoute = ({ children, ...rest }) => {
-    const { user } = useAuth();
-    console.log(user);
+    const { user, isloding } = useAuth();
+    if (isloding) {
+        return <Spinner animation="border" variant="primary" />
+    }
+    // console.log(user);
     return (
         <Route
             {...rest}
@@ -18,7 +21,6 @@ const PrivetRoute = ({ children, ...rest }) => {
                             state: { from: location }
                         }}
                     />
-
             }
         />
     );

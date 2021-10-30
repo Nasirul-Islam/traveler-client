@@ -29,20 +29,17 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <PrivetRoute path="/purchase">
+            <PrivetRoute path="/purchase/:purchaseid">
               <Purchase></Purchase>
             </PrivetRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/myOrder">
+            <PrivetRoute path="/myOrder">
               <MyOrder></MyOrder>
-            </Route>
+            </PrivetRoute>
             <Route path="/manageOrder">
               <ManageOrder></ManageOrder>
-            </Route>
-            <Route path="/addOrder">
-              <AddOrder></AddOrder>
             </Route>
             <Route exact path="*">
               <NotFound></NotFound>

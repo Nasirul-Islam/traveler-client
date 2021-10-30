@@ -11,6 +11,7 @@ const googleprovider = new GoogleAuthProvider();
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [errorMessage, seterrorMessage] = useState('');
+    const [isloding, setIsloding] = useState(true);
 
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
@@ -19,30 +20,30 @@ const useFirebase = () => {
             } else {
                 setUser({});
             }
+            setIsloding(false)
         });
     }, [])
 
     const handlegooglelogin = () => {
+        setIsloding(true);
         return signInWithPopup(auth, googleprovider)
-        // .catch(error => {
-        //     seterrorMessage(error.message);
-        // })
     }
 
     const handlelogOut = () => {
+        setIsloding(true)
         signOut(auth)
             .then(() => {
                 // Sign-out successful.
             })
-            .catch((error) => {
-                // An error happened.
-            });
+            .finally(() => setIsloding(false))
     }
     return {
         user,
         errorMessage,
         handlegooglelogin,
-        handlelogOut
+        handlelogOut,
+        isloding,
+        setIsloding
     }
 }
 

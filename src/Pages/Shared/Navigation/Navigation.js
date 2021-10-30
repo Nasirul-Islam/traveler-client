@@ -18,15 +18,15 @@ const Navigation = () => {
                             <Nav>
                                 <Link to="/home">Home</Link>
                             </Nav>
-                            <Nav>
-                                <Link to="/myOrder">My Order</Link>
-                            </Nav>
                             {!user?.email ?
                                 <Nav>
                                     <Link to="/login">Login</Link>
                                 </Nav>
                                 :
                                 <>
+                                    <Nav>
+                                        <Link to="/myOrder">My Order</Link>
+                                    </Nav>
                                     <Nav>
                                         <Link to="/manageOrder">Manage Order</Link>
                                     </Nav>

@@ -3,22 +3,21 @@ import { Button, Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const SIngleService = ({ data }) => {
-    const { name, email, website, phone } = data;
+    const { title, description, img, id } = data;
+    const url = `/purchase/${id}`
     return (
         <>
             <Col>
                 <Card>
-                    <Card.Img variant="top" src="https://i.ibb.co/3cVcSPK/chef-3.png" />
+                    <Card.Img variant="top" src={img} height="300px" />
                     <Card.Body>
-                        <Card.Title>{name}</Card.Title>
+                        <Card.Title>{title}</Card.Title>
                         <Card.Text>
-                            {email}
-                            {website}
-                            {phone}
+                            {description.slice(0, 200)}
                         </Card.Text>
                     </Card.Body>
                     <Button variant="info" className="PurchaseBtn">
-                        <Link to="/purchase">Purchase Now</Link>
+                        <Link to={url}>Purchase Now</Link>
                     </Button>
                 </Card>
             </Col>

@@ -5,7 +5,7 @@ import SIngleService from '../SIngleService/SIngleService';
 
 const Services = () => {
     const { datas } = useData();
-    console.log(datas);
+    console.log(datas.services);
     return (
         <Container className="py-5">
             <div className="py-3">
@@ -14,7 +14,7 @@ const Services = () => {
             </div>
             <Row xs={1} md={3} className="g-4 py-3">
                 {
-                    datas?.map(data => <SIngleService
+                    datas?.services?.map(data => <SIngleService
                         key={data.id}
                         data={data}
                     ></SIngleService>)

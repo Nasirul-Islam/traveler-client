@@ -1,0 +1,60 @@
+{
+    "services": [
+        {
+            "id": 11,
+            "title": "Paris, France - The City of Lights",
+            "description": "Lanterns were on every street, and Parisians were asked to light their windows with oil lamps and candles. This was to prevent law offenders from avoiding the police or hiding in dark alleys. The idea was to reduce the crime rate. That time forward, Paris gained the name La Ville-Lumière (the City of Light). Paris was the first European city to introduce street lighting back in 1889. We're over 100 years down the line and Paris still upholds her reputation of lighting up Europe. In addition to the Eiffel Tower, Paris has countless other gorgeous landmarks and monuments that add to the beauty of the spacious boulevards and their charming cafés. French cuisine is also world famous, and you can find some of the best of it in Paris.",
+            "img": "https://www.holidify.com/images/bgImages/PARIS.jpg"
+        },
+        {
+            "id": 12,
+            "title": "London - The heritage of England",
+            "description": "Standing on the Thames River, London is the capital of England as well as the most populous city in Great Britain. The city is a confluence of the old and the new and is one of the top tourist destinations in the world. It is a city with numerous attractions of all sorts including great architecture and heritage. London is made of two ancient cities which are now merged together to form the capital. The two cities are The city of London and the City of Westminster. Together, they are known as Greater London. London attracts over 15.3 million international tourists in a year.",
+            "img": "https://www.holidify.com/images/bgImages/LONDON.jpg"
+        },
+        {
+            "id": 13,
+            "title": "Colosseum, Rome",
+            "description": "This was originally called the Flavian Amphitheatre and was mostly used as public entertainment arena. The Colosseum is one of the most famous attractions in Rome and is where most gladiatorial fights took place. Today, actors in gladiator clothes stand outside the Colosseum, where you can take pictures with them (for a price!) The Colosseum is a testament to the ingenuity of the builders, having stood the test of time. While parts have been damaged, the Colosseum still remains standing in most of its original glory today.",
+            "img": "https://www.holidify.com/images/cmsuploads/compressed/15988567539_f8c9a23efe_b_20190111143112.jpg"
+        },
+        {
+            "id": 14,
+            "title": " Matira Beach Water Sports in Bora Bora ",
+            "description": "Welcome to the fantasy of a dreamy island with utmost perfectional beauty- This is how the pictures of Bora Bora entice you for a vacation. A part of French Polynesia, this magical island has some of the most beautiful sights to behold- a tropical island surrounded by the amazing blue lagoon and coral reefs, accompanied by small islets (Motus) scattered around Bora Bora. Bora Bora has a lot more to offer apart from its indulging over-water and beach-side resorts. When you get slightly bored of sunbathing and your supercool tan starts looking like burnt skins, you can always turn to some great adventures for an extraordinary experience. There are a couple of underwater activities that also allow you to interact with the enigmatic marine life.",
+            "img": "https://www.holidify.com/images/compressed/dest_pixa_3550.jpg"
+        },
+        {
+            "id": 15,
+            "title": "The Maldives, A Tropical Haven",
+            "description": "The Maldives, a tropical haven of immaculate beaches, are an archipelago of 1,192 coral islands grouped into natural atolls, out of which only a few are inhabited. Time stands still in the Maldives as you lie on the white sand beaches, hearing the crystal clear waves crash against the seashore, swim with the manta rays and reef sharks and feast on a wide array of fishes with the locals. Be it adventure or leisure, Maldives is your answer. With its sun-kissed beaches, palm-fringed islands, crystalline lagoons and pristine waters, Maldives enthrals and draws visitors all year round. The resorts here are an entire island itself usually, including stay options like overwater bungalows.",
+            "img": "https://www.holidify.com/images/cmsuploads/compressed/Mal_8685996006_20190709170139.jpg"
+        },
+        {
+            "id": 16,
+            "title": "The largest Island. Thailand, Phuket ",
+            "description": "The largest Island in all of Thailand, Phuket has everything Thailand has to offer. Serviced by the Phuket International Airport, the island sees no dearth of travellers during any time of the year. Golden beaches, numerous offshore islands, upbeat markets, a high octane nightlife and thrilling watersports characterise Phuket in a nutshell. Beaches like Surin and Kata cater to families and those individuals with eccentric tastes. Patong beach, on the other hand, caters to all those who like it cheap, loud and crazy, even after the sun sets. Bangla road with its numerous bars, ping pong shows and street food vendors comes alive as the night grows older.",
+            "img": "https://www.holidify.com/images/bgImages/PHUKET.jpg"
+        }
+    ],
+    "offers": [
+        {
+            "id": 21,
+            "title": "The Republic of Singapore",
+            "description": "Best described as a microcosm of modern Asia, Singapore is a melting pot of culture and history, and an extravaganza of culinary delights. Officially known as the Republic of Singapore, it is both a city and a country located in Southeast Asia. One of Asia's most visited destinations, Singapore is best described as an amalgam of a fast-paced life and an off-the-back-street inheritance.Singapore is the quintessential cosmopolitan, having the highest religious diversity in any country. Spread 42 km (26 miles) east to west and 23 km (14 miles) north to south, today it boasts of the world's busiest port. Singapore has climbed to be one of Asia's hit-list destinations with its efficient and widespread transport system - whizzing in this country is just a matter of minutes!",
+            "img": "https://www.holidify.com/images/bgImages/SINGAPORE.jpg"
+        },
+        {
+            "id": 22,
+            "title": "Hampi, Karnataka",
+            "description": "Located amidst the ruins of the ancient Vijaynagar empire, Hampi is one of the most historically significant places in India. It used to be the capital of the prosperous Vijaynagar empire. Home to several temples, royal pavilions and platforms, and monuments, Hampi is a UNESCO World Heritage Site in India. The Virupaksha temple located there is an important religious and pilgrim site for Hindus. The overall rocky and rugged environment of Hampi makes it a backpacker’s delight. The weather in November is quite cool and pleasant, which makes it a perfect getaway in November.",
+            "img": "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_401634754_20190701121146.jpg"
+        },
+        {
+            "id": 23,
+            "title": "Water Sports in Varkala",
+            "description": "Varkala is a coastal town in the southern part of Kerala known for the unique 15m high 'Northern Cliff' adjacent to the Arabian Sea. It is popular for its hippie culture, shacks on the cliff serving great seafood and playing global music and the samadhi of Kerala's saint Sree Narayana Guru. Varkala is also known for Jardana Swami Temple, also known as Dakshin Kashi. It is the only place in Kerala where the hills come close to the sea. The uniqueness of the place is the merging of cliffs with the Arabian Sea. Varkala Beach is a popular beach where you can enjoy various water sports activities such as para-sailing and paragliding.",
+            "img": "https://www.holidify.com/images/bgImages/VARKALA.jpg"
+        }
+    ]
+}
