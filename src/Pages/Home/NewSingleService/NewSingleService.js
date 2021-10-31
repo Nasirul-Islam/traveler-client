@@ -3,7 +3,7 @@ import { Button, Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const NewSingleService = ({ data }) => {
-    const { title, description, img, _id } = data;
+    const { title, description, img, id } = data;
     // console.log(data);
     return (
         <>
@@ -17,7 +17,7 @@ const NewSingleService = ({ data }) => {
                         </Card.Text>
                     </Card.Body>
                     <Button variant="info" className="PurchaseBtn">
-                        <Link to={`/purchase/${_id}`}>Purchase Now</Link>
+                        <Link to={`/purchase/${id}`}>Purchase Now</Link>
                     </Button>
                 </Card>
             </Col>

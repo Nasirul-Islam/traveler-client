@@ -31,32 +31,34 @@ const ManageOrder = () => {
     return (
         <Container className="py-4">
             <h2>Order Count of all users - {orders.length}</h2>
-            <Table striped bordered hover>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>User Name</th>
-                        <th>User Email</th>
-                        <th>Purchase Id</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                {orders?.map((pd, index) => (
-                    <tbody key={pd._id}>
+            <div className="table-responsive-md">
+                <Table striped bordered hover>
+                    <thead>
                         <tr>
-                            <td>{index + 1}</td>
-                            <td>{pd?.name}</td>
-                            <td>{pd?.email}</td>
-                            <td>{pd?._id}</td>
-                            <Button
-                                onClick={() => handleDelete(pd?.purchaseId)}
-                                className="p-2 border-0 bg-warning" variant="warning">
-                                Delete
-                            </Button>
+                            <th>#</th>
+                            <th>User Name</th>
+                            <th>User Email</th>
+                            <th>Purchase Id</th>
+                            <th>Action</th>
                         </tr>
-                    </tbody>
-                ))}
-            </Table>
+                    </thead>
+                    {orders?.map((pd, index) => (
+                        <tbody key={pd._id}>
+                            <tr>
+                                <td>{index + 1}</td>
+                                <td>{pd?.name}</td>
+                                <td>{pd?.email}</td>
+                                <td>{pd?._id}</td>
+                                <Button
+                                    onClick={() => handleDelete(pd?.purchaseId)}
+                                    className="p-2 border-0 bg-warning" variant="warning">
+                                    Delete
+                                </Button>
+                            </tr>
+                        </tbody>
+                    ))}
+                </Table>
+            </div>
         </Container>
     );
 };

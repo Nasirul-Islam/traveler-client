@@ -56,5 +56,52 @@
             "description": "Varkala is a coastal town in the southern part of Kerala known for the unique 15m high 'Northern Cliff' adjacent to the Arabian Sea. It is popular for its hippie culture, shacks on the cliff serving great seafood and playing global music and the samadhi of Kerala's saint Sree Narayana Guru. Varkala is also known for Jardana Swami Temple, also known as Dakshin Kashi. It is the only place in Kerala where the hills come close to the sea. The uniqueness of the place is the merging of cliffs with the Arabian Sea. Varkala Beach is a popular beach where you can enjoy various water sports activities such as para-sailing and paragliding.",
             "img": "https://www.holidify.com/images/bgImages/VARKALA.jpg"
         }
+    ],
+    "new": [
+        {
+            "_id": {
+                "$oid": "617e22aab4ee1274deb2f8da"
+            },
+            "title": "South Island, New Zealand",
+            "description": "New Zealand's South Island brims with majestic landscapes at every turn, from dramatic mountains to fjords to glaciers. Here, you can admire the mountains of Fiordland National Park, a UNESCO World Heritage Site, from hiking trails or a boat on Milford Sound. At night, journey to the University of Canterbury's Mount John Observatory to gaze at the starry skies. You can also indulge your inner daredevil in Queenstown, explore two of the most accessible glaciers in the world on the island's west coast or sample delicious food and wine in the Marlborough region.",
+            "img": "https://travelinglikeapro.com/wp-content/uploads/2019/09/milford-sound-fiordland-national-park-things-to-do-in-south-island.jpg",
+            "price": "1000000"
+        },
+        {
+            "_id": {
+                "$oid": "617e2386b4ee1274deb2f8db"
+            },
+            "title": "Maui Island in Hawaii",
+            "description": "Whether you're driving along the Road to Hana, enjoying a bird's-eye view of the lush coastline from a helicopter, snorkeling with sea turtles or simply relaxing on the Hawaiian island's honey- or black-colored beaches, you'll find that Maui is unlike any other tropical destination. Don't miss a chance to visit Haleakala National Park, which is home to the world's largest dormant volcano. You should also attend a luau for a dose of local culture and a taste of Hawaiian specialties like poi, poke and mahimahi. ",
+            "img": "https://travel.usnews.com/dims4/USNEWS/070489a/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/GettyImages-117211856_TeGITRy.jpg",
+            "price": "90000"
+        },
+        {
+            "_id": {
+                "$oid": "617e23f2b4ee1274deb2f8dc"
+            },
+            "title": "Dubai",
+            "description": "Stunning Persian Gulf views, heart-pumping activities and historical landmarks await you in Dubai. This Middle Eastern city is filled with some of the world's most notable and unique attractions, including the Burj Khalifa, the Dubai Mall and indoor Ski Dubai. But the city still holds onto its heritage, as seen in the Bastakiya Quarter and the traditional Gold and Spice souks. When you need a break from the hustle and bustle of the city, head to a sandy shore like Jumeirah Beach, Sunset Beach or Al Mamzar Beach Park.",
+            "img": "https://travel.usnews.com/dims4/USNEWS/4d06a60/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/183346577_JrseKsM.jpg",
+            "price": "80000"
+        },
+        {
+            "_id": {
+                "$oid": "617e38dbb4ee1274deb2f8e6"
+            },
+            "title": "Florence",
+            "description": "Florence offers plenty of world-famous attractions, including the Duomo, Piazzale Michelangelo and Piazza della Signoria. Plus, it's a haven for art lovers thanks to art-focused museums like the Galleria dell'Accademia and the Uffizi Gallery. After appreciating this historic Italian city's Renaissance architecture and art, sample some of the region's delectable Tuscan food and wine at Florence's quaint cafes, gelato shops and ristorantes. Then, cross the Ponte Vecchio to get to the acclaimed Pitti Palace and the Boboli Gardens, where you'll find fountains, meticulously landscaped green spaces and panoramic views.",
+            "img": "https://travel.usnews.com/dims4/USNEWS/071b573/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/images/main-2016-getty-resized_445x280_u6z3l3P.jpg",
+            "price": "9999999"
+        },
+        {
+            "_id": {
+                "$oid": "617e631ad26fc772d6872c48"
+            },
+            "title": "Rwenzori Mountain National Park",
+            "description": "The Rwenzori Mountain also known as “Mountains of the Moon” a UNESCO World Heritage Site, lie in western Uganda along the Uganda-Congo border. The equatorial snow peaks include the third highest point in Africa, while the lower slopes are blanketed in moorland, bamboo and rich, moist montane forest. The national park hosts 70 mammals and 217 bird species including 19 Albertine Rift endemics, as well as some of the world’s rarest vegetation.Explore Rwenzori Mountain National Park",
+            "img": "https://ugandatourismcenter.com/wp-content/uploads/2016/11/Rwenzori-Mountains-National-Park3.jpg",
+            "price": "120000"
+        }
     ]
 }

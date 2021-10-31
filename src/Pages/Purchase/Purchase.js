@@ -14,22 +14,17 @@ const Purchase = () => {
     const { datas } = useData();
     const { newservices } = useNewservices();
     const { purchaseid } = useParams();
-    // filter out the package from order
+    // filter out order from database
     const servicesresult = datas?.services?.filter(data => data.id == purchaseid);
     const offersresult = datas?.offers?.filter(data => data.id == purchaseid);
-    const newservicesresult = newservices?.filter(data => data._id == purchaseid);
-    const newservicesId = newservices?.find(data => data._id == purchaseid);
-    console.log(servicesresult);
-    console.log(offersresult);
-    console.log(newservicesresult);
-    console.log(newservicesId);
+    const newservicesresult = newservices?.filter(data => data.id == purchaseid);
     // Form --------
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
         data.email = user.email
         data.purchaseId = purchaseid
-        data._id = newservicesId?._id
-        console.log(data)
+        data.status = "pending"
+        // console.log(data)
         axios.post('https://serene-stream-43167.herokuapp.com/addorder', data)
             .then(res => {
                 console.log(res);
@@ -61,7 +56,7 @@ const Purchase = () => {
                         </div>
                         <div>
                             {newservicesresult?.map(data => <Details
-                                key={data._id}
+                                key={data.id}
                                 data={data}
                             ></Details>)}
                         </div>

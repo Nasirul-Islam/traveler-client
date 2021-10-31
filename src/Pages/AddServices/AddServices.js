@@ -8,9 +8,11 @@ const AddServices = () => {
     // Form --------
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
+        data.id = Math.floor(Math.random() * 1000)
+        // console.log(data)
         axios.post('https://serene-stream-43167.herokuapp.com/addservices', data)
             .then(res => {
-                console.log(res);
+                // console.log(res);
                 if (res.data.insertedId) {
                     alert("Added Successfully")
                     reset();
