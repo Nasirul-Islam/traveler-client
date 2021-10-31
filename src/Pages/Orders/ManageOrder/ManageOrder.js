@@ -1,10 +1,11 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Table } from 'react-bootstrap';
 
 const ManageOrder = () => {
     const [orders, setOrders] = useState([]);
     const [control, setControl] = useState(false);
-    console.log(orders)
+    console.log(orders);
     useEffect(() => {
         fetch('https://serene-stream-43167.herokuapp.com/allorder')
             .then(res => res.json())
@@ -28,6 +29,24 @@ const ManageOrder = () => {
                 })
         }
     }
+    const handleConfirm = (id) => {
+        const confirmOrder = orders.find(order => order.purchaseId == id)
+        confirmOrder.status = "Approved"
+        console.log(confirmOrder);
+        fetch(`https://serene-stream-43167.herokuapp.com/confirmorder/${id}`, {
+            method: "PUT",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(confirmOrder)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.modifiedCount > 0) {
+                    alert("Confirm Successfully")
+                }
+            })
+    }
     return (
         <Container className="py-4">
             <h2>Order Count of all users - {orders.length}</h2>
@@ -50,8 +69,13 @@ const ManageOrder = () => {
                                 <td>{pd?.email}</td>
                                 <td>{pd?._id}</td>
                                 <Button
+                                    onClick={() => handleConfirm(pd?.purchaseId)}
+                                    className="py-2 border-0 bg-info me-4" variant="info">
+                                    Confirm
+                                </Button>
+                                <Button
                                     onClick={() => handleDelete(pd?.purchaseId)}
-                                    className="p-2 border-0 bg-warning" variant="warning">
+                                    className="py-2 border-0 bg-warning" variant="warning">
                                     Delete
                                 </Button>
                             </tr>
