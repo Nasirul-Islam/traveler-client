@@ -13,7 +13,7 @@ const SingleOffer = ({ data }) => {
                     <Card.Body>
                         <Card.Title>{title}</Card.Title>
                         <Card.Text>
-                            {description.slice(0, 180)}
+                            {description.slice(0, 170)}
                         </Card.Text>
                     </Card.Body>
                     <Button variant="info" className="PurchaseBtn">

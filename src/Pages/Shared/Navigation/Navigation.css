@@ -1,6 +1,6 @@
 .nav-top{
     background: rgb(13 110 253);
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .nav-top span{
@@ -28,6 +28,10 @@
     font-size: 18px;
     font-weight: 600;
     margin: 0 10px;
+}
+
+.navigation .navbar-nav :hover a{
+    color: rgb(251, 241, 183);
 }
 
 .navigation .logOutBtn {

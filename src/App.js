@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import AuthProvider from "./context/AuthProvider";
+import AddServices from "./Pages/AddServices/AddServices";
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
 import NotFound from "./Pages/NotFound/NotFound";
@@ -39,6 +40,9 @@ function App() {
             </PrivetRoute>
             <Route path="/manageOrder">
               <ManageOrder></ManageOrder>
+            </Route>
+            <Route path="/addServices">
+              <AddServices></AddServices>
             </Route>
             <Route exact path="*">
               <NotFound></NotFound>

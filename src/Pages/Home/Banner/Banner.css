@@ -9,13 +9,13 @@
 .banner-text h1{
     font-size: 57px;
     font-weight: 700;
-    color: white;
+    color: rgb(229 230 235);
     margin-bottom: 30px;
 }
 
 .banner-text h3{
     font-size: 29px;
     font-weight: 600;
-    color: whitesmoke;
+    color: rgb(229 232 239);
     line-height: 40px;
 }

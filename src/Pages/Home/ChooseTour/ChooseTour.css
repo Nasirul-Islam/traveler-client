@@ -1,0 +1,23 @@
+.chooseTour {
+        background: url(../../../images/banner2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px 0;
+}
+
+.chooseTour h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.chooseTour p {
+    color: rgb(219, 217, 217);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tours img{
+    color: white;
+}

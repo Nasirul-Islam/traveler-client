@@ -72,7 +72,7 @@ const Purchase = () => {
                         <input {...register("zip")} type="number"
                             placeholder="ZIP Code" />
                         <br />
-                        <input type="submit" value="Confirm" />
+                        <input type="submit" value="Confirm" className="bg-info border-0" />
                     </form>
                 </Col>
             </Row>

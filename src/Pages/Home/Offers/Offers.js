@@ -5,7 +5,7 @@ import SingleOffer from '../SingleOffer/SingleOffer';
 
 const Offers = () => {
     const { datas } = useData();
-    console.log(datas.offers);
+    // console.log(datas.offers);
     return (
         <Container className="py-5">
             <div className="py-3">
