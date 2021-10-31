@@ -6,7 +6,7 @@ const ManageOrder = () => {
     const [control, setControl] = useState(false);
     console.log(orders)
     useEffect(() => {
-        fetch('http://localhost:5000/allorder')
+        fetch('https://serene-stream-43167.herokuapp.com/allorder')
             .then(res => res.json())
             .then(data => {
                 setOrders(data)

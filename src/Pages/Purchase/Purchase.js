@@ -7,19 +7,28 @@ import { useParams } from 'react-router';
 import Details from '../Details/Details';
 import useAuth from '../../hooks/useAuth';
 import axios from 'axios';
+import useNewservices from '../../hooks/useNewservices';
 
 const Purchase = () => {
     const { user } = useAuth();
     const { datas } = useData();
+    const { newservices } = useNewservices();
     const { purchaseid } = useParams();
+    // filter out the package from order
     const servicesresult = datas?.services?.filter(data => data.id == purchaseid);
     const offersresult = datas?.offers?.filter(data => data.id == purchaseid);
-    console.log(user?.email);
+    const newservicesresult = newservices?.filter(data => data._id == purchaseid);
+    const newservicesId = newservices?.find(data => data._id == purchaseid);
+    console.log(servicesresult);
+    console.log(offersresult);
+    console.log(newservicesresult);
+    console.log(newservicesId);
     // Form --------
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
         data.email = user.email
         data.purchaseId = purchaseid
+        data._id = newservicesId?._id
         console.log(data)
         axios.post('https://serene-stream-43167.herokuapp.com/addorder', data)
             .then(res => {
@@ -47,6 +56,12 @@ const Purchase = () => {
                         <div>
                             {offersresult?.map(data => <Details
                                 key={data.id}
+                                data={data}
+                            ></Details>)}
+                        </div>
+                        <div>
+                            {newservicesresult?.map(data => <Details
+                                key={data._id}
                                 data={data}
                             ></Details>)}
                         </div>

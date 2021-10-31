@@ -5,7 +5,7 @@ import SingleOrder from '../SingleOrder/SingleOrder';
 
 const MyOrder = () => {
     const { myorders } = useOrder();
-    // console.log(myorders);
+    console.log(myorders);
     return (
         <Container className="py-4">
             <h2>Total Purchase - {myorders.length}</h2>

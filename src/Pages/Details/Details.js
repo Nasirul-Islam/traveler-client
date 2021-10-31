@@ -12,6 +12,7 @@ const Details = ({ data }) => {
                     <Card.Text>
                         {description}
                     </Card.Text>
+                    <p>Cost: {data?.price}</p>
                 </Card.Body>
             </Card>
         </>

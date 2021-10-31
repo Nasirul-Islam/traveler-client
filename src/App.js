@@ -38,12 +38,12 @@ function App() {
             <PrivetRoute path="/myOrder">
               <MyOrder></MyOrder>
             </PrivetRoute>
-            <Route path="/manageOrder">
+            <PrivetRoute path="/manageOrder">
               <ManageOrder></ManageOrder>
-            </Route>
-            <Route path="/addServices">
+            </PrivetRoute>
+            <PrivetRoute path="/addServices">
               <AddServices></AddServices>
-            </Route>
+            </PrivetRoute>
             <Route exact path="*">
               <NotFound></NotFound>
             </Route>

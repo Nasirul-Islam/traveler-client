@@ -2,12 +2,21 @@ import React from 'react';
 import './AddServices.css';
 import { Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
+import axios from 'axios';
 
 const AddServices = () => {
     // Form --------
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
-        console.log(data);
+        axios.post('https://serene-stream-43167.herokuapp.com/addservices', data)
+            .then(res => {
+                console.log(res);
+                if (res.data.insertedId) {
+                    alert("Added Successfully")
+                    reset();
+                }
+            })
+
     }
     return (
         <Container className="addServices py-4">
@@ -20,7 +29,7 @@ const AddServices = () => {
                 <br />
                 <input {...register("img")} type="text" placeholder="image url" />
                 <br />
-                <input {...register("price")} type="text" placeholder="package price" />
+                <input {...register("price")} type="number" placeholder="package price" />
                 <br />
                 <input type="submit" value="Confirm" className="bg-info border-0" />
             </form>
