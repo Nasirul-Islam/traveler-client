@@ -1,6 +1,6 @@
 import React from 'react';
 import './ChooseTour.css';
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 const ChooseTour = () => {
     return (
@@ -11,7 +11,7 @@ const ChooseTour = () => {
                     <p className="px-2">Find your next travel adventure and make it memorable. Explore wildlife, enjoy seaside or book a cruise tour.
                         <br />Check out our popular destinations.</p>
                 </div>
-                <div className="d-flex justify-content-evenly tours">
+                <div className="d-flex flex-wrap justify-content-evenly tours">
                     <div className="">
                         <img className="img-fluid" src="https://wanderers.qodeinteractive.com/wp-content/uploads/2018/03/h1-custom-icon-1-hover.png" alt="" />
                         <p>Self-Guided</p>
