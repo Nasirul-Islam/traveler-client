@@ -5,17 +5,18 @@ Link to live site of this project [https://traveler-bee12.web.app/]
 # Small Description -
 
 <p>
-This is a Traveling related website. You can get traveling related iformation from here. You can Purchase any package online. Here you will find numerous experienced travel guides. Who can help you to enjoy your journey properly.
+This is a travel-related website. Users can get travel information from here. Users can buy any package online. Here users will find many experienced travel guides. Which can help them to enjoy the journey properly.
 </p>
 
 # The feature of this website
 
 <ul>
-<li>This website is very user friendly.</li>
-<li>Users can easily Purchase any package and they can easily take any service.</li>
-<li>From the website you will find numerous experienced travel guides.</li>
-<li>You can book online for Purchase any package.</li>
-<li>We are always committed to providing you with good service.</li>
+<li>Users will not be able to book any package without logging in.</li>
+<li>The user will be able to see his booked package.</li>
+<li>The user will be able to cancel any of his booking package.</li>
+<li>Admin can see all booking and delete or approve them.</li>
+<li>Admin can add a new service or delete the previous package.</li>
+<li>This website is fully responsive for small and large devices.</li>
 </ul>
 
 
@@ -29,4 +30,4 @@ This is a Traveling related website. You can get traveling related iformation fr
     <li> Axios </li>
 </ul>
 
-Also more  using firebase for authentication.
+<p>Also more  using Firebase for authentication.</p>
